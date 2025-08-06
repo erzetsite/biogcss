@@ -279,7 +279,7 @@ input:focus {
     }
 }
 
-/* Tambahkan ini ke styles.css sebelumnya */
+/* Tambahkan di styles.css */
 .badge {
     display: inline-block;
     background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
@@ -289,12 +289,23 @@ input:focus {
     font-size: 12px;
     font-weight: 500;
     margin-left: 10px;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 @media (max-width: 600px) {
     .badge {
         display: block;
-        margin: 10px 0 0 0;
+        margin: 10px auto 0;
         width: fit-content;
     }
 }
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
